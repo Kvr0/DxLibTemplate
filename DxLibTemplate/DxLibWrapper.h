@@ -5,6 +5,7 @@
 #include <DxLib.h>
 #include "DxLibWrapperHint.h"
 #include "Input.h"
+#include "Vec2D.h"
 
 class DxLibWrapper
 {
