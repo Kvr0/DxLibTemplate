@@ -160,7 +160,6 @@
     <ClInclude Include="DxLibWrapper.h" />
     <ClInclude Include="DxLibWrapperHint.h" />
     <ClInclude Include="Input.h" />
-    <ClInclude Include="TestWin.h" />
     <ClInclude Include="ValueWrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -37,7 +37,7 @@ void DxLibWrapper::end()
 	DxLib_End();
 	m_isInit = false;
 }
-bool DxLibWrapper::main()
+bool DxLibWrapper::loop()
 {
 	return true;
 }
@@ -54,5 +54,5 @@ DxLibWrapper::~DxLibWrapper()
 
 void DxLibWrapper::run()
 {
-	while (ProcessMessage() == 0 && ScreenFlip() == 0 && ClearDrawScreen() == 0 && main());
+	while (ProcessMessage() == 0 && ScreenFlip() == 0 && ClearDrawScreen() == 0 && loop());
 }

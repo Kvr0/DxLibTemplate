@@ -1,12 +1,12 @@
-#include "TestWin.h"
+#include "DxLibWrapper.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	DxLibWrapperHint hint;
 
-	TestWin test(hint);
+	DxLibWrapper wrapper(hint);
 
-	test.run();
+	wrapper.run();
 
 	return 0;
 }

@@ -3,6 +3,7 @@
 #define _VALUEWRAPPER_H_
 
 #include <string>
+#include <array>
 
 namespace valuew
 {
@@ -69,6 +70,9 @@ namespace valuew
 #else
 	using string = std::string;
 #endif
+
+	template <class _Ty, size_t _Size>
+	using array = std::array<_Ty, _Size>;
 }
 
 #endif // !_VALUEWRAPPER_H_

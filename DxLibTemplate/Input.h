@@ -22,6 +22,8 @@ namespace input
 		ULONGLONG pressedTime() const;
 		ULONGLONG lastPressedTime() const;
 
+		operator bool() const;
+
 		void press();
 		void release();
 	};
@@ -39,6 +41,15 @@ namespace input
 
 		static void setDisplayFlag(bool _display);
 		static void setPos(const valuew::value2<int>& _pos);
+		static void resetWheel();
+	};
+
+	class Keyboard
+	{
+	public:
+		static valuew::array<ButtonState, 256> keys;
+
+		static void update();
 	};
 }
 
