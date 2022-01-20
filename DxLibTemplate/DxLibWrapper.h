@@ -19,7 +19,7 @@ public:
 	DxLibWrapper(const DxLibWrapperHint& _hint);
 	virtual ~DxLibWrapper();
 
-	virtual bool main();
+	virtual bool loop();
 	void run();
 };
 
